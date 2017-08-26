@@ -1,0 +1,33 @@
+.find_life {
+    background: #fff; // width:100%;
+    // overflow: hidden;
+    overflow-x: scroll;
+    padding-bottom:0.1rem;
+    .findbox {
+        @include flexbox();
+        width:150%;
+        .lifecard {
+            width:15%;
+            .lifebox {
+                @include flexbox();
+                @include flex-direction(column);
+                @include justify-content(space-around);
+                @include align-items(center);
+                // text-align: center;
+                width: 100%;
+                img {
+                    width: 70%;
+                }
+                p {
+                    color: #4a2019;
+                    font-size: 0.12rem;
+                    margin-top:0.08rem;
+                }
+                span {
+                    color: #aeaeae;
+                    font-size: 0.12rem;
+                }
+            }
+        }
+    }
+}

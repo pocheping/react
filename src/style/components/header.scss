@@ -1,0 +1,36 @@
+header{
+    height:0.4rem;
+    background:#fff;
+    @include flexbox();
+    @include justify-content(center);
+    @include align-items(center);
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index:10;
+    
+    h3{
+        color:#a96940;
+        font-size:0.15rem;
+    }
+    
+    a{
+        
+       position: absolute;
+       right:5%;
+       top:30%;
+       color:#a96940;
+       font-size:0.14rem;
+       width:0.4rem;
+       text-align: right;
+    }
+    .place{
+        left:5%;
+    }
+    .back{
+        left:0%;
+    }
+    .heart{
+        right:15%;
+    }
+}

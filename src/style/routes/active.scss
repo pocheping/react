@@ -1,0 +1,48 @@
+#active {
+    @include flex(1);
+    width: 100%;
+    position: relative;
+    top: 0.4rem;
+    padding-bottom: 0.4rem;
+    overflow: hidden;
+    overflow-y: scroll; overflow: hidden;
+    overflow-y: scroll;
+    background: #f5f5f5;
+    .tagg {
+        padding: 0.07rem 0;
+        background: #fff;
+        @include flexbox();
+        @include justify-content(space-between);
+        .tagSpan {
+            padding-left: 0.1rem;
+            span {
+                color: rgb(226, 183, 149);
+            }
+        }
+        a {
+            color: #a96940;
+            padding-right: 0.07rem;
+        }
+    }
+    .selfbox{
+        width:100%;
+        @include flexbox();
+        @include justify-content(space-around);
+        overflow-x: scroll;
+        background: #fff;
+        div{
+            width:20%;
+            text-align: center;
+            // @include flexbox();
+            //  @include justify-content(space-around);
+            img{
+                width:100%;
+            }
+            span{
+                font-size:0.12rem;
+                color:#a96940;
+                line-height:0.3rem;
+            }
+        }
+    }
+}

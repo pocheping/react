@@ -1,0 +1,114 @@
+#detail{
+     @include flex(1);
+    position: relative;
+    top: 0.4rem;
+    padding-bottom: 0.4rem;
+    width: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    background: #f5f5f5;
+    .detailInfo{
+        width:100%;
+        background: #fff;
+      
+        img{
+            width:100%;
+        }
+        .title{
+            width:95%;
+            margin:0.1rem auto 0.04rem;
+            
+            p{
+                font-size:0.15rem;
+                color:#333;
+            }
+            span{
+                font-size:0.13rem;
+                color:#c16531;
+                line-height:0.3rem;
+            }
+        }
+        .count{
+            border-top:1px solid #eae7e6;
+            @include flexbox();
+            line-height:0.5rem;
+             width:95%;
+            margin:0 auto;
+            p{
+                color:#c16531;
+            }
+            span{
+                margin-left:0.1rem;
+            }
+        }
+        .time{
+            border-top:1px solid #eae7e6;
+            @include flexbox();
+            line-height:0.5rem;
+             width:95%;
+            margin:0 auto;
+            p{
+                color:#c16531;
+            }
+            span{
+                margin-left:0.1rem;
+            }
+        }
+        .add{
+            border-top:1px solid #eae7e6;
+            @include flexbox();
+            line-height:0.5rem;
+             width:95%;
+            margin:0 auto ;
+            p{
+                color:#c16531;
+            }
+            span{
+                margin-left:0.1rem;
+            }
+            .zz{
+                position: absolute;
+                right:5%;
+            }
+        }
+        .focus{
+            @include flexbox();
+            @include align-items(center);
+            // @include justify-content(space-between);
+            border-top:0.08rem solid #eae7e6;
+            img{
+               width:20%;
+               height:20%;
+               border-radius:50%;
+               padding:0.1rem ;
+               
+                // @include flex(1);
+            }
+            div{
+                // @include flex(1);
+                @include flexbox();
+                @include flex-direction(column);
+                
+                
+                span{
+                    font-size:0.13rem;
+                    
+                }
+                span:first-child{
+                    color:#c16531;
+                    font-size:0.14rem;
+                }
+            }
+            button{
+                // @include flex(1);
+                background: #e3b795;
+                color:#fff;
+                border:none;
+                border-radius: 3px;
+                padding:0.02rem 0.06rem;
+                position: absolute;
+                right:5%;
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+@import "../core/reset.scss";
+@import "./routes/router-app.scss";
+@import "./routes/home.scss";
+@import "./routes/find.scss";
+@import "./routes/active.scss";
+@import "./routes/my.scss";
+@import "./components/header.scss";
+@import "./components/home_around.scss";
+@import "./components/find_select.scss";
+@import "./components/find_life.scss";
+@import "./components/topic.scss";
+@import "./routes/detail.scss";
+#app{
+    width:100%;
+    height:100%;
+    .appbox{
+        width:100%;
+        height:100%;
+        @include flexbox();
+        @include flex-direction(column);
+    }
+}
+h1,h2,h3,h4{
+    font-size: medium;
+    font-family: 'Ping Fang SC';
+}
+span{
+    font-family: 'Ping Fang SC';
+}
